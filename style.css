@@ -129,6 +129,16 @@ input:focus{
     background-color: red;
 }
 
+@media (max-width: 423px){
+    .btn{
+        display: block;
+        margin-inline: auto;
+        margin-top: 10px;
+    }
+    .output-box{
+        height: 45vh;
+    }
+}
 
 
 
