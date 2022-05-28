@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'poppins';
+    font-weight: 100;
+}
+
+.container{
+    height: 100vh;
+    position:relative;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,cyan, dodgerblue); 
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.box:nth-child(2){
+   background: linear-gradient(to down, cyan, dodgerblue); 
+   clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+.todo-container{
+    display: grid;
+    place-content: center;
+    background: transparent;
+}
+.todo{
+    position: relative;
+    height: 70vh;
+    width: 70vw;
+    background-color: white;
+    box-shadow: 
+    -5px 0px 30px rgba(0,0,0,0.27),
+    0px 5px 30px rgba(0,0,0,0.17);
+    border-radius: 2px;
+}
+
+.title{
+    text-align: center;
+    margin-top: 5px;
+    letter-spacing: 3px;
+    color: rgb(77, 71, 71);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.453);
+}
+.input-fields{
+    margin: 10px;
+    text-align: center;
+}
+
+input{
+    font-family: 'poppins';
+    padding: 8px 0px 8px 5px;
+    outline: none;
+    border: none;
+    outline: 2px solid orange;
+    color: rgba(0, 0, 0, 0.826);
+}
+input:focus{
+    
+    outline: 2px solid dodgerblue;
+
+}
+
+.btn{
+    font-family: 'poppins';
+    padding: 8px;
+    cursor: pointer;
+}
+.output-box{
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    width: 100%;
+    background-color: #251D3A;
+    overflow-y: auto;
+}
+
+.task{
+    color: white;
+    font-weight: 300;
+    background: dodgerblue;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    overflow-x: auto;
+    text-overflow: ellipsis
+}
+.task-done{
+    text-decoration: line-through;
+    color: white;
+    background-color: rgb(18, 189, 18)
+}
+
+
+/* icons as buttons  */
+
+.icon-container{
+    display: none;
+    float: right;
+}
+
+.icon-btn{
+    border-radius: 50%;
+}
+.icon{
+    cursor: pointer;
+    padding: 6px;
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+.icon-done{
+    background-color: green;
+}
+.icon-done:hover{
+    background-color: rgb(5, 99, 5);
+}
+.icon-delete{
+    background-color: rgb(179, 28, 28);
+    color: black;
+}
+.icon-delete:hover{
+    background-color: red;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #251D3A;
+}
+::-webkit-scrollbar-thumb{
+    background-color: pink;
+    border-radius: 20px;
+}
+
